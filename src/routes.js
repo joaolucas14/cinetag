@@ -1,5 +1,6 @@
 import Cabecalho from "componentes/Cabecalho";
 import Container from "componentes/Container";
+import Player from "componentes/Player";
 import Rodape from "componentes/Rodape";
 import FavoritosProvider from "contextos/Favoritos";
 import Favoritos from "pages/Favoritos";
@@ -15,6 +16,7 @@ function AppRoutes() {
           <Routes>
             <Route path="/" element={<Inicio />}></Route>
             <Route path="/favoritos" element={<Favoritos />}></Route>
+            <Route path="/:id" element={<Player />}></Route>
           </Routes>
         </FavoritosProvider>
       </Container>
